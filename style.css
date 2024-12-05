@@ -1,0 +1,602 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar
+{
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 20px;
+    color:#fff;;
+    background-color: #6A5ACD;
+}
+.nav-links{
+    display:flex;/* for making the links or content one to one and all in horizontal*/
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+}
+.nav-links li{
+    margin: 0 30px;/* to add space between links*/
+    
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/student1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.header-content{
+    margin-bottom: 100px;
+    color: whitesmoke;
+    text-align:center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.header-content h1{
+    font-size: 7vmin /* vmin to increase and decrease the text size acc to page size*/
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right:30px;
+    width:40px;
+    cursor: pointer;/*for menu apperance*/
+    display:none; /* will not display on home*/
+}
+/* tutors*/
+section{
+width: 80%;
+margin: 80px auto;
+}
+.tutor {
+    text-align: center;
+    font-size: 3.5vmin;
+    color: #6d4d4d;
+    margin: 0 auto;
+}
+.tutors {
+    text-align: left;
+    font-size: 3.5vmin;
+    color: #6d4d4d;
+    margin: 0 auto;
+    padding-left: 30%;
+    /* Moves the text slightly to the right */
+}
+.tutorss {
+    text-align: left;
+    font-size: 3.2vmin;
+    color: #6d4d4d;
+    margin: 0 auto;
+    padding-left: 28%;
+}
+.line{
+    width: 190px;
+    height:4px;
+    background:blueviolet;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+.table {
+    width: 300px;
+    height: 400px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow for a card effect */
+    background: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.table td {
+    border: 1px solid #ccc;
+    /* Add table borders */
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.table img {
+    max-width: 100%;
+    /* Make the image take up the full width of the table cell */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+    max-height: 250px;
+    /* Limit the height to prevent oversized images */
+    object-fit: cover;
+    /* fit imange */
+    border-radius: 5px;
+    /*Round corners for a polished look */
+    display: block;
+    /* Remove any inline spacing issues */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contact-tutor-btn{/* tutor button */
+    display: inline-block;
+    padding:10px 30px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background-color:#6A5ACD;
+    border-radius:8px;
+    text-decoration: none;
+    transition: all 0.3s case-in-out;
+    text-align:center;
+    width:100%;
+}
+
+.contact-tutor-btn:hover{
+    background-color: #28a745;
+    color:white;
+    box-shadow: 0 4px 8px;
+    text-decoration: none;
+}
+.hire-tutor-btn {
+    display: inline-block;
+    padding: 18px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #6A5ACD;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: auto;
+    margin-left: -84px;
+    /* Adjust this value to move it slightly left */
+}
+
+/* Hover effect for better interactivity */
+.hire-tutor-btn:hover {
+    background-color:#28a745;
+    transform: translateY(-2px);
+    /* Subtle lift on hover */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns per row */
+    gap: 20px;
+    /* Space between cards */
+    padding: 10px;
+}
+
+section {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    font-size: larger;
+    font-weight: bold;
+}
+.subjects{
+    font-family: Arial, sans-serif;
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Tab Buttons */
+.tabs {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tab-btn {
+    padding: 16px 45px;
+    background-color: #6A5ACD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.tab-btn.active {
+    background-color:rgb(219, 136, 28);
+    /* Active tab color */
+}
+
+.tab-btn:hover {
+    background-color:#28a745;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: none;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+}
+
+.tab-content.active {
+display: flex;
+    /* Display content when active */
+    justify-content: center;
+    align-items: center;
+}
+.custom-table {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    /* Space below the table */
+    margin-right: 1px;
+}
+.custom-table td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.custom-table img {
+    display: block;
+        margin: 0 auto;
+        /* Centers the image */
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 5px;
+}
+
+.custom-table p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.subjects-table td {
+    background-color: #F0F8FF;
+}
+
+.subjects-table img {
+    border: 2px solid #6A5ACD;
+}
+.classes-table td {
+    background-color: #FFFACD;
+}
+
+.classes-table img {
+    border: 2px solid #FFD700;
+}
+
+/*reviews*/
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reviews {
+    text-align: center;
+        font-size: 3.4vmin;
+        color: #6d4d4d;
+        margin: 0 auto;
+        padding: 30px;;
+}
+
+.testimonials {
+    padding: 100px 0;
+    background-color: #fafafa;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.testimonials-content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.testimonials-item {
+    background-color: #F0F8FF;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials-item:hover {
+    transform: translateY(-10px);
+    /* Slight lift effect on hover */
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+}
+
+.testimonials-item .info {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-item img {
+    max-width: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+        vertical-align: middle;
+}
+
+.testimonials-item .name {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #333;
+    /* Darker text for names */
+    line-height: 1.2;
+}
+
+.testimonials-item p {
+    margin-top: 20px;
+    color: rgb(75, 72, 72);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.rating {
+    margin-top: 15px;
+    color: #FFD700;
+    /* Golden color for stars */
+}
+
+.rating i {
+    font-size: 18px;
+}
+
+.rating i:hover {
+    transform: scale(1.4);
+    color:#ff9914
+    /* Slightly larger stars on hover */
+}
+
+.js-testimonials-slider {
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* Distributes the content evenly between left and right */
+    align-items: center;
+    /* Vertically centers the content */
+    background-color: #6A5ACD;
+    padding: 20px 20px;
+    font-size: 15px;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: black;
+    /* Slightly lighter color on hover */
+}
+
+footer .footer-left {
+    display: flex;
+    justify-content: flex-start;
+    /* Aligns the links to the left */
+}
+
+footer .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns the copyright text to the right */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+nav {
+    background: #4CAF50;
+    padding: 10px 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    position: relative;
+    /* Parent positioning for dropdown alignment */
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s, background 0.3s;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: absolute;
+    /* Align relative to the parent <li> */
+    top: 100%;
+    /* Directly below the parent menu item */
+    left: 0;
+    /* Align with the left edge of the parent <li> */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    min-width: 200px;
+    /* Ensure enough width for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown a {
+    color: #333;
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: normal;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+.dropdown a:hover {
+    background: #6A5ACD;
+    /* Background color on hover */
+    color: white;
+}
+
+/* Show dropdown on hover */
+li:hover .dropdown {
+    display: flex;
+    /* Display dropdown when hovering over parent <li> */
+}
+
+/*for mobile device*/
+@media only screen and (max-width:1000px){
+    .navbar
+    {
+        padding: 0;
+    }
+    .logo{
+        position:absolute;
+        top:15px;
+         left:20px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width:100%;
+        height:100vh;
+        justify-content: center;
+        background-color: #6A5ACD;
+        margin-top: -900px; /* for clicking on menu then only links will appear*/
+        transition: all 0.5s ease;/* mobile menu will come from top */
+    }
+    .mobile-menu{
+        margin-top:0px;/*for menu*/
+    }
+    .menu-btn {
+              position: absolute;
+              top: 0px;
+              right: 20px;
+              height: 30px;
+              width: auto;
+              /* Maintain aspect ratio */
+              cursor: pointer;
+              display: block; /* for showing in mobile menu*/
+          }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .tutors {
+        text-align: center;
+        font-size: 2.9vmin;
+        color: #6d4d4d;
+        margin: 15px auto;
+        padding: 10px;
+        width: fit-content;
+    }
+        .tutorss {
+            text-align: center;
+            font-size: 2.9vmin;
+            color: #6d4d4d;
+            margin: 10px auto;
+            padding: 0px;
+            width: fit-content;
+        }
+         .city-row {
+         justify-content: flex-start;
+        /* Align city blocks to the left */
+         gap: 25px;
+        margin-right: 0;
+        /* Remove negative margin for mobile */
+        margin-left: 12px;
+        /* Add some margin to the left */
+         padding: 0 15px;
+        max-width: 100%;
+                }
+        
+        .city-block {
+         width: 120%;
+                    max-width: 180%;
+                    margin: 0 auto 15px;
+                    /* Center align and add spacing below blocks */
+                    padding: 30px 30px;
+                    background-color: white;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                }
+        
+                .city-block h3 {
+                    font-size: 15px;
+                    margin: 0;
+                    /* Remove unnecessary margins */
+                    word-wrap: break-word;
+                    /* Ensure text wraps within the block */
+                    text-align: left;
+                }
+        
+                .city-block img {
+                    width: 40px !important;
+                    height: 40px !important;
+                    border-radius: 50%;
+                    /* Circular image */
+                    margin-right: 9px !important;
+                    /* Adjust space between image and text */
+                    flex-shrink: 0;
+                }
+}
+
+

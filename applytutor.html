@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply as Tutor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://forms.gle/S4BnjACuieNJanps5" method="post" enctype="multipart/form-data">
+    <h2>Apply as a Tutor</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="e.g., john.doe@example.com" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="e.g., +91-9876543210" required>
+
+    <label for="subject">Teaching Subject(s):</label>
+    <select id="subject" name="subject" multiple required>
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+      <option value="English">English</option>
+      <option value="Computer Science">Computer Science</option>
+    </select>
+
+    <label for="qualification">Highest Qualification:</label>
+    <input type="text" id="qualification" name="qualification" placeholder="e.g., B.Sc, M.Ed" required>
+
+    <label for="experience">Years of Experience:</label>
+    <select id="experience" name="experience" required>
+      <option value="Less than 1 year">Less than 1 year</option>
+      <option value="1-3 years">1-3 years</option>
+      <option value="3-5 years">3-5 years</option>
+      <option value="5+ years">5+ years</option>
+    </select>
+
+    <label for="availability">Availability:</label>
+    <select id="availability" name="availability" required>
+      <option value="Full-Time">Full-Time</option>
+      <option value="Part-Time">Part-Time</option>
+      <option value="Weekends">Weekends</option>
+    </select>
+
+    <label for="mode">Preferred Mode of Teaching:</label>
+    <select id="mode" name="mode" required>
+      <option value="Online">Online</option>
+      <option value="In-Person">In-Person</option>
+      <option value="Hybrid">Hybrid</option>
+    </select>
+
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+    <label for="additional-info">Additional Information:</label>
+    <textarea id="additional-info" name="additional_info" rows="4" placeholder="Share anything else relevant."></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Adds spacing */
+    background-color: #5a2ac8;
+    border-radius: 10px;
+}
+
+.navbar {
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Vertically centers the items */
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #6A5ACD; /* background */
+    z-index: 1000; /* Ensures navbar stays above other elements */
+    height: 40px; /* Fixed height */
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px; /* Adds spacing between logo and nav links */
+}
+
+.nav-links {
+  list-style: none;
+    display: flex; /* Aligns links horizontally */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Spacing between links */
+    margin-left: auto; 
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 50px; /* Adds balanced clickable area */
+    border-radius: 5px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #ffdd00; /* Changes text color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a subtle background highlight */
+}
+
+.nav-links .active a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Makes the active link stand out */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #6a00ff, #a44aff);
+     background-image:url('./img/Black-chalkboard-background-Graphics-77759244-1-1-580x435.jpg'); /* Replace with your chalkboard image URL */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Ensures overlay and content work correctly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Keeps content above the overlay */
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/*Event*/
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align:center;
+    font-size: 4vmin;
+    color:black;
+}
+.row{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: space-between;
+}
+.row .col{
+   display:flex;
+   flex-direction: column;
+   align-items: center;  
+}
+.row img {
+    width: 150px; /* Fixed width for all images */
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures aspect ratio is maintained, with cropping if necessary */
+    border-radius: 10px; /* Optional: Adds rounded corners for a better look */
+}
+.events .row{
+   margin-top:50px; 
+}
+h4{
+   font-size: 3vimn;
+   color: #484872;
+   margin:20px auto;
+}
+p{
+   color: #7c7c7c;
+   padding: 0px 40px;
+   text-align:center;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+/* Section Heading */
+.testimonials h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    background-color: #f8f8f8;
+    margin: 20px auto;
+    padding: 20px 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.testimonial-card p {
+    margin: 0;
+    color: #555;
+}
+
+/* Author Text Styling */
+.testimonial-card .author {
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #7c7c7c;
+}
+
+.tutor{
+    
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.tutor h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Steps */
+.steps {
+    display: flex;
+    justify-content: center;
+}
+
+.step {
+    margin: 0 20px;
+    text-align: center;
+    position:relative;
+}
+
+.step img {
+    width: 120px; /* Icon size */
+    height: 120px;
+}
+
+.step p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+ 
+.timeline{
+   display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Line connecting the circles */
+.timeline::before {
+    content: '';
+  position: absolute;
+  top: 50%; /* Align the line vertically with the circles */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc; /* Gray line */
+  z-index: -1; /* Send the line behind the circles */
+}
+
+
+
+/* Circle for each step */
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #6a4fc4; /* Purple circle */
+  color: white;
+  border-radius: 50%; /* Makes it a perfect circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 0 auto; /* Centers the circle horizontally */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+
+}
+
+/* Hover effect for the circle */
+.circle:hover {
+  transform: scale(1.2); /* Increases size on hover */
+}
+
+
+.teach {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+/* Section Heading */
+.teach h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.teach hr{
+color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat img {
+    margin-bottom: 10px;
+}
+
+.number {
+    font-size: 2em;
+    color: #5c4d9f;
+}
+
+.description {
+    color: #5c4d9f;
+}
+
+.icon {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons img {
+    margin: 0 10px;
+    width: 30px;
+    height: 25px;
+}
+
+h4 {
+
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main {
+    padding: 10px;
+    text-align: center;
+}
+
+.main p {
+    margin: 10px auto;
+    max-width: 1200px;
+    
+}
+
+.last {
+    background-color: #5c4d9f;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.last p{
+   color: white;
+   text-align: right;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling effect */
+}

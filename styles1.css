@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Adds spacing */
+    background-color: #5a2ac8;
+    border-radius: 10px;
+}
+
+.navbar {
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Vertically centers the items */
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #6A5ACD; /* background */
+    z-index: 1000; /* Ensures navbar stays above other elements */
+    height: 40px; /* Fixed height */
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px; /* Adds spacing between logo and nav links */
+}
+
+.nav-links {
+  list-style: none;
+    display: flex; /* Aligns links horizontally */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Spacing between links */
+    margin-left: auto; 
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 50px; /* Adds balanced clickable area */
+    border-radius: 5px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #ffdd00; /* Changes text color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a subtle background highlight */
+}
+
+.nav-links .active a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Makes the active link stand out */
+}
+
+
+
+/* About Section */
+.back {
+  position: relative;
+  background-image: url('about_us.jpg'); /* Add your background image file here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background image fixed */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  
+}
+
+
+
+/* Story Section */
+.story-section {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.story-section h1 {
+  font-size: 2rem;
+  color: #6a4fc4;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.story-section p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+h4 {
+
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main {
+    padding: 10px;
+    text-align: center;
+}
+
+.main p {
+    margin: 10px auto;
+    max-width: 1200px;
+    color: black;
+    
+}
+
+.last {
+    background-color: #5c4d9f;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.last p{
+   color: white;
+   text-align: right;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+/* Section Heading */
+.about h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat img {
+    margin-bottom: 10px;
+    height:150px;
+    width:150px;
+}
+
+.name {
+    font-size: 2em;
+    color: #5c4d9f;
+}
+
+.description {
+    color: #5c4d9f;
+}
